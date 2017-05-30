@@ -1,0 +1,25 @@
+{
+  "name": "vaa_chat",
+  "version": "1.0.0",
+  "description": "Chat Platform",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "socket.io": "^2.0.1",
+    "winston": "^2.3.1",
+    "yargs": "^8.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vaa",
+    "chat",
+    "nodejs",
+    "socket.io"
+  ],
+  "author": "trungnq",
+  "license": "ISC"
+}
