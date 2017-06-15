@@ -57,9 +57,8 @@ let count = 0;
 io.on('connection', function (socket) {
     logger.info('a user connected');
     socket.on('chat message', function (msg) {
-        logger.info('message: ' + msg);
         count++;
-        io.emit('chat message', 'message no' + count);
+        socket.broadcast.emit('chat message', msg);
     });
 });
 

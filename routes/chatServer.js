@@ -12,6 +12,7 @@ router.get('/', function (req, res) {
             'server': 'http://'+hostname+':'+DEFAULT_PORT,
         },
     };
+	res.header("Access-Control-Allow-Origin", "*");
     res.json(output);
 });
 
