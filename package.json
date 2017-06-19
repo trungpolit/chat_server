@@ -4,7 +4,10 @@
   "description": "Chat Platform",
   "main": "index.js",
   "dependencies": {
+    "co": "^4.6.0",
     "express": "^4.15.3",
+    "express-jwt": "^5.3.0",
+    "mongoose": "^4.10.7",
     "morgan": "^1.8.2",
     "socket.io": "^2.0.1",
     "winston": "^2.3.1",
