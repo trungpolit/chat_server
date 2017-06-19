@@ -1,0 +1,144 @@
+2017-06-14T15:42:09.034Z - info: listening on *:3000
+2017-06-14T15:42:17.306Z - info: ::1 - - [14/Jun/2017:15:42:17 +0000] "GET /getChatServer HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T15:42:32.822Z - info: ::1 - - [14/Jun/2017:15:42:32 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T15:45:22.157Z - info: ::1 - - [14/Jun/2017:15:45:22 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T15:45:22.508Z - info: a user connected
+2017-06-14T15:45:37.030Z - info: ::1 - - [14/Jun/2017:15:45:37 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T15:45:37.396Z - info: a user connected
+2017-06-14T15:46:23.970Z - info: ::1 - - [14/Jun/2017:15:46:23 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T15:46:24.337Z - info: a user connected
+2017-06-14T15:47:34.578Z - info: ::1 - - [14/Jun/2017:15:47:34 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T15:47:34.978Z - info: a user connected
+2017-06-14T15:51:52.857Z - info: ::1 - - [14/Jun/2017:15:51:52 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T15:51:53.285Z - info: a user connected
+2017-06-14T15:52:11.933Z - info: message: [object Object]
+2017-06-14T16:00:25.292Z - info: ::1 - - [14/Jun/2017:16:00:25 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:00:25.662Z - info: a user connected
+2017-06-14T16:01:25.923Z - info: ::1 - - [14/Jun/2017:16:01:25 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:01:26.353Z - info: a user connected
+2017-06-14T16:13:51.090Z - info: message: [object Object]
+2017-06-14T16:13:58.417Z - info: message: [object Object]
+2017-06-14T16:14:25.403Z - info: ::1 - - [14/Jun/2017:16:14:25 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:14:25.753Z - info: a user connected
+2017-06-14T16:14:32.900Z - info: message: [object Object]
+2017-06-14T16:16:20.089Z - info: ::1 - - [14/Jun/2017:16:16:20 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:16:20.104Z - info: a user connected
+2017-06-14T16:16:28.944Z - info: ::1 - - [14/Jun/2017:16:16:28 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:16:29.064Z - info: a user connected
+2017-06-14T16:17:42.871Z - info: ::1 - - [14/Jun/2017:16:17:42 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:17:42.891Z - info: a user connected
+2017-06-14T16:19:33.708Z - info: ::1 - - [14/Jun/2017:16:19:33 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:19:34.092Z - info: a user connected
+2017-06-14T16:19:48.080Z - info: message: [object Object]
+2017-06-14T16:23:21.163Z - info: ::1 - - [14/Jun/2017:16:23:21 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:23:21.183Z - info: a user connected
+2017-06-14T16:23:29.525Z - info: ::1 - - [14/Jun/2017:16:23:29 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:23:29.542Z - info: a user connected
+2017-06-14T16:23:46.049Z - info: listening on *:3000
+2017-06-14T16:23:46.621Z - info: a user connected
+2017-06-14T16:23:46.940Z - info: a user connected
+2017-06-14T16:23:47.008Z - info: a user connected
+2017-06-14T16:23:56.557Z - info: ::1 - - [14/Jun/2017:16:23:56 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:23:56.651Z - info: a user connected
+2017-06-14T16:24:34.612Z - info: ::1 - - [14/Jun/2017:16:24:34 +0000] "GET /getChatServer HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:24:34.731Z - info: a user connected
+2017-06-14T16:44:54.399Z - info: listening on *:3000
+2017-06-14T16:49:34.198Z - info: ::1 - - [14/Jun/2017:16:49:34 +0000] "GET /getChatServer HTTP/1.1" 200 53 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:49:34.679Z - info: a user connected
+2017-06-14T16:51:33.383Z - info: ::1 - - [14/Jun/2017:16:51:33 +0000] "GET /getChatServer HTTP/1.1" 200 53 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-14T16:51:33.413Z - info: a user connected
+2017-06-19T16:26:52.665Z - info: listening on *:3000
+2017-06-19T16:27:09.533Z - info: ::1 - - [19/Jun/2017:16:27:09 +0000] "GET / HTTP/1.1" 200 1367 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:27:11.955Z - info: a user connected
+2017-06-19T16:27:12.044Z - info: ::1 - - [19/Jun/2017:16:27:12 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:27:48.384Z - info: ::1 - - [19/Jun/2017:16:27:48 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 500 2046 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:29:11.277Z - info: listening on *:3000
+2017-06-19T16:35:51.760Z - info: listening on *:3000
+2017-06-19T16:37:43.637Z - info: listening on *:3000
+2017-06-19T16:39:05.127Z - info: listening on *:3000
+2017-06-19T16:39:09.258Z - info: ::ffff:127.0.0.1 - - [19/Jun/2017:16:39:09 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 500 2046 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:43:32.837Z - info: listening on *:3000
+2017-06-19T16:45:04.357Z - info: listening on *:3000
+2017-06-19T16:45:08.031Z - info: ::1 - - [19/Jun/2017:16:45:08 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" - - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:46:03.130Z - info: listening on *:3000
+2017-06-19T16:48:05.785Z - info: ::1 - - [19/Jun/2017:16:48:05 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" - - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:48:10.185Z - info: listening on *:3000
+2017-06-19T16:48:12.857Z - info: ::1 - - [19/Jun/2017:16:48:12 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 171 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:51:26.843Z - info: listening on *:3000
+2017-06-19T16:53:31.464Z - info: ::1 - - [19/Jun/2017:16:53:31 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" - - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:54:21.788Z - info: listening on *:3000
+2017-06-19T16:54:25.671Z - info: ::1 - - [19/Jun/2017:16:54:25 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 189 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:54:39.130Z - info: ::1 - - [19/Jun/2017:16:54:39 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 208 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:55:15.969Z - info: ::1 - - [19/Jun/2017:16:55:15 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:55:17.921Z - info: ::1 - - [19/Jun/2017:16:55:17 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:58:18.962Z - info: ::1 - - [19/Jun/2017:16:58:18 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:58:26.219Z - info: listening on *:3000
+2017-06-19T16:58:28.532Z - info: ::1 - - [19/Jun/2017:16:58:28 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:58:31.016Z - info: ::1 - - [19/Jun/2017:16:58:31 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:58:31.231Z - info: ::1 - - [19/Jun/2017:16:58:31 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:58:31.631Z - info: ::1 - - [19/Jun/2017:16:58:31 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:58:32.061Z - info: ::1 - - [19/Jun/2017:16:58:32 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T16:58:32.278Z - info: ::1 - - [19/Jun/2017:16:58:32 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T17:02:30.702Z - info: listening on *:3000
+2017-06-19T17:02:33.151Z - info: ::1 - - [19/Jun/2017:17:02:33 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T17:04:00.581Z - info: ::1 - - [19/Jun/2017:17:04:00 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 155 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T17:04:03.935Z - info: ::1 - - [19/Jun/2017:17:04:03 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 155 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T17:04:21.765Z - info: ::1 - - [19/Jun/2017:17:04:21 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T17:05:21.235Z - info: listening on *:3000
+2017-06-19T17:05:31.164Z - info: ::1 - - [19/Jun/2017:17:05:31 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 155 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T17:12:55.086Z - info: listening on *:3000
+2017-06-19T17:12:58.061Z - info: ::1 - - [19/Jun/2017:17:12:58 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 294 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T17:19:14.163Z - info: listening on *:3000
+2017-06-19T17:19:18.170Z - info: ::1 - - [19/Jun/2017:17:19:18 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 294 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T17:19:21.205Z - info: ::1 - - [19/Jun/2017:17:19:21 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 294 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T17:19:22.960Z - info: ::1 - - [19/Jun/2017:17:19:22 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 294 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+
+2017-06-19T17:19:23.535Z - info: ::1 - - [19/Jun/2017:17:19:23 +0000] "GET /saveRoom?type=1&user_ids=1,2 HTTP/1.1" 200 294 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+

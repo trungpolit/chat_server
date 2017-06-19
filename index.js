@@ -8,6 +8,7 @@ const {
 } = require('./constants/index');
 
 const chatServer = require('./routes/chatServer');
+const chatRoom = require('./routes/chatRoom');
 
 const app = require('express')();
 const http = require('http').Server(app);
@@ -40,26 +41,71 @@ const logger = new (winston.Logger)({
 });
 
 logger.stream = {
-    write: function(message, encoding){
+    write: function (message, encoding) {
         logger.info(message);
     }
 };
 
-app.use(require("morgan")("combined", { "stream": logger.stream }));
+const message = require('./models/message');
+
+app.use(require("morgan")("combined", {"stream": logger.stream}));
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
 app.use('/getChatServer', chatServer);
+app.use('/getChatRoom', chatRoom);
 
-let count = 0;
+// Thực hiện test
+const room = require('./models/room');
+app.get('/saveRoom', function (req, res) {
+    console.log('Query:');
+    console.log(req.query);
+    const user_ids = req.query.user_ids.split(',');
+    const type = req.query.type;
+    room.findOrCreate(type, user_ids, function (err, r) {
+        if (err) {
+            res.send(err);
+        }
+        res.send(r);
+    });
+})
+
 io.on('connection', function (socket) {
     logger.info('a user connected');
-    socket.on('chat message', function (msg) {
-        count++;
-        socket.broadcast.emit('chat message', msg);
+    // Thực hiện join vào phòng chat 1-1
+    socket.on('join_chat_room', function (msg) {
+        const room_id = msg.room_id || null;
+        if (!room_id) {
+            return socket.emit('socketerror', {code: '#SOC001', message: 'room_id is empty.'});
+        }
+        socket.join(room_id);
     });
+    // Thực hiện gửi tin nhắn tới người nhận
+    socket.on('chat_message', function (msg) {
+        const room_id = msg.room_id || null;
+        if (!room_id) {
+            return socket.emit('socketerror', {code: '#SOC002', message: 'room_id is empty.'});
+        }
+
+        message.create({
+            user_id: socket.handshake.decoded_token.user_id,
+            room_id: room_id,
+            type: 1,
+            content: msg.content,
+            files: null,
+            seen_by: null,
+        }, function (err,message) {
+            if (err) {
+                return socket.emit('socketerror', {code: '#SOC003', message: 'message cant save.'});
+            } else {
+                msg.message_id = message._id;
+                socket.broadcast.to(room_id).emit('chat_message', msg);
+            }
+        })
+
+    })
 });
 
 http.listen(port, function () {
