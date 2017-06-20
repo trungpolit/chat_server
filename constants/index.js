@@ -7,5 +7,7 @@ module.exports.DEFAULT_PORT = 3000;
 module.exports.LOG_INFO_NAME = 'info.log';
 module.exports.LOG_EXCEPTION_NAME = 'exceptions.log';
 module.exports.SECRET = '123^&asd';
+module.exports.TTL = 24*60*60;
 module.exports.CHAT_DEFAULT_TYPE = 1;
+
 

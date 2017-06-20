@@ -25,7 +25,7 @@ roomSchema.statics.findOrCreate = function (type, user_ids, cb) {
         $set: {
             type: type,
             users: user_ids,
-            modified: Date.now
+            modified: Date.now()
         }
     }, {
         upsert: true,
