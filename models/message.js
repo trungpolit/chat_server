@@ -14,7 +14,7 @@ const messageSchema = new Schema({
     modified: {type: Date, default: Date.now},
 });
 
-animalSchema.statics.pushSeenBy = function (user_id, id, seenBy, cb) {
+messageSchema.statics.pushSeenBy = function (user_id, id, seenBy, cb) {
     const found = seenBy.some(function (seen) {
         return seen.user_id === user_id;
     });

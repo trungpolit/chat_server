@@ -23,11 +23,11 @@ router.get('/', function (req, res) {
         return res.json(output);
     }
 
-   const token = jwt.sign({
+    const token = jwt.sign({
         user_id: user_id
     }, SECRET, {expiresIn: TTL});
 
-    output.data = {token:token};
+    output.data = {token: token};
     return res.json(output);
 });
 
