@@ -9,7 +9,8 @@ const {
 } = require('./constants/index');
 
 // http - api
-const app = require('express')();
+const express = require('express');
+const app = express();
 const http = require('http').Server(app);
 const jwt = require('express-jwt');
 
@@ -20,6 +21,7 @@ const socketioJwt = require('socketio-jwt');
 const morgan = require('morgan');
 const argv = require('yargs').argv;
 const port = argv.p || DEFAULT_PORT;
+const path = require('path');
 
 const winston = require('winston');
 const logger = new (winston.Logger)({
@@ -55,13 +57,14 @@ const chatRoom = require('./routes/chatRoom');
 const jwtToken = require('./routes/jwtToken');
 
 app.use(require("morgan")("combined", {"stream": logger.stream}));
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
 app.use(jwt({
     secret: SECRET,
     getToken: function fromHeader(req) {
         return req.header('token') || null;
     }
-}).unless({path: ['/getRefreshToken', '/']}));
+}).unless({path: ['/getRefreshToken', '/', '/public/*']}));
 
 app.use(function (err, req, res, next) {
     console.error(err.stack);
@@ -74,7 +77,7 @@ app.use(function (err, req, res, next) {
 });
 
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.use('/getRefreshToken', jwtToken);
@@ -147,7 +150,7 @@ io.on('connection', function (socket) {
     });
 
     // Thực đánh dấu message đã được xem (seen)
-    socket.on('seen_message', function (msg) {
+    socket.on('seen_message', function (msg, fn) {
         logger.info('seen_message: Có sự kiện đánh dấu đã xem (seen)');
         logger.info(msg);
 
@@ -166,8 +169,8 @@ io.on('connection', function (socket) {
 
         // Thực hiện lấy ra message
         const message = require('./models/message');
-        message.findOne({room_id: room_id, message_id: message_id}).then(function (message) {
-            if (!message) {
+        message.identify(message_id, room_id).then(function (msg) {
+            if (!msg) {
                 logger.info('seen_message: Không tìm thấy message tương ứng với room_id="%s", message_id="%s"', room_id, message_id);
                 return socket.emit('socketerror', {
                     code: '#SOC005',
@@ -175,9 +178,9 @@ io.on('connection', function (socket) {
                     data: null
                 });
             }
-            const seenBy = message.seen_by || [];
-            this.pushSeenBy(user_id, message_id, seenBy, function (err) {
-                if (!err) {
+            const seenBy = msg.seen_by || [];
+            message.pushSeenBy(user_id, message_id, seenBy, function (err) {
+                if (err) {
                     logger.error('seen_message: Lỗi khi đánh dấu message_id="%s" được seen bởi user_id="%s"', message_id, user_id);
                     logger.error(err.stack);
                     return socket.emit('socketerror', {
@@ -186,6 +189,11 @@ io.on('connection', function (socket) {
                         data: err
                     });
                 }
+
+                // Thông báo tới sender là message đã được gửi đi
+                logger.info('seen_message: Thực hiện thông báo tới sender đã seen thành công msg message_id="%s", room_id="%s"', message_id, room_id);
+                const output = {code: 0, message: '', data: {message_id: message_id, room_id: room_id}};
+                fn(output);
             });
         }).catch(function (err) {
             logger.error('seen_message: Lỗi khi xác định message tương ứng với room_id="%s", message_id="%s"', room_id, message_id);

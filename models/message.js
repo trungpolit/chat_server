@@ -21,9 +21,16 @@ messageSchema.statics.pushSeenBy = function (user_id, id, seenBy, cb) {
     if (!found) {
         seenBy.push({user_id: user_id, at: Date.now()});
         this.update({'_id': id}, {$set: {seen_by: seenBy}}, {multi: false}, cb);
-    }else{
+    } else {
         cb(false);
     }
+};
+
+messageSchema.statics.identify = function (message_id, room_id, cb) {
+    return this.findOne({
+        _id: message_id,
+        room_id: room_id,
+    }).exec();
 };
 
 const message = mongoose.model('Message', messageSchema);

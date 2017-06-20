@@ -64,12 +64,13 @@
                 console.log(data);
             });
 
-            $('form').submit(function(){
+            $('form').submit(function () {
                 var message = {
                     room_id: '5948a9c3a1ab2c6eafbd8c15',
                     content: $('#m').val()
                 };
-                socket.emit('send_message',message,function (data) {
+                // Thực hiện gửi message
+                socket.emit('send_message', message, function (data) {
                     console.log('send_message');
                     console.log(data);
                     $('#m').val('');
@@ -77,14 +78,25 @@
                 return false;
             });
 
-            socket.on('receive_message',function (data) {
+            // Thực hiện nhận về message
+            socket.on('receive_message', function (data) {
                 console.log('receive_message');
+                console.log(data);
+                var message = '<li data-message_id="' + data.message_id + '" data-room_id="' + data.room_id + '" class="message">' + data.content + '</li>';
+                $('#messages').append(message);
+            });
+
+            // Kiểm soát lỗi chat
+            socket.on('socketerror', function (data) {
+                console.log('socketerror');
                 console.log(data);
             });
 
-            socket.on('socketerror',function (data) {
-                console.log('socketerror');
-                console.log(data);
+            $('#messages').on('click', '.message', function () {
+                var message_id = $(this).data('message_id');
+                var room_id = $(this).data('room_id');
+                console.log('seen_message');
+                socket.emit('seen_message', {room_id: room_id, message_id: message_id});
             });
 
         });
